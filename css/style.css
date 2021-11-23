@@ -61,6 +61,7 @@ header{
     padding: 20px;
     border-radius: 6px;
     margin: 10px auto;
+    margin-top: 130px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
