@@ -1,27 +1,53 @@
+/* 
+-COLORI
+bianco nuvole: #f9fbfa
+rosa chiaro: #f9d2d7
+rosa scuro: #ffb7c3
+rosa cipria: #ffdee5
+viola ametista: #dec4e7
+rosso pastello: #ff78a0
+azzurro chiaro: #c5e8ea
+azzurro scuro: #6dcfea
+giallo: #fbf0b8
+verde: #b5eecd
+*/
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Emilys Candy', cursive;
+}
+
+body{
+    background-color: #ffdee5;
+    /* background-color: #f9d2d7; */
+    overflow-y: scroll;
 }
 
 header{
     height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 #header-top{
     height: 50%;
     display: flex;
     align-items: center;
+    background-color: #fbf0b8;
 }
 
 #header-top span{
+    font-size: 30px;
     margin-left: 10px;
 }
 
 #header-bottom{
     height: 50%;
     display: flex;
-    background-color: #29b1dd;
+    background-color: #6dcfea;
     justify-content: center;
     align-items: center;
 }
@@ -31,17 +57,20 @@ header{
 }
 
 #box-container{
-    max-width: 800px;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 6px;
     margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #f9fbfa;
 }
 
 .box{
     width: 100px;
     height: 60px;
-    background-color: lightgrey;
+    background-color: #c5e8ea;
     border-radius: 6px;
     display: flex;
 
@@ -51,14 +80,23 @@ header{
     margin: 6px 6px 6px 6px;
 }
 
+.box i{
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.979);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 25px;
+}
+
 .blue{
-    color: blue;
+    color: #6dcfea;
 }
 
 .orange{
-    color: orange;
+    color: #fbf0b8;
 }
 
 .green{
-    color: green;
+    color: #b5eecd;
 }
