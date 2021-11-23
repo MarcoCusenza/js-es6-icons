@@ -15,7 +15,8 @@
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <!-- MY CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -29,17 +30,19 @@
         </div>
         <div id="header-bottom">
             <span>Filtra per tipo</span>
-            <select name="selector" id="selector">
-                <option value="all">All</option>
-                <option value="animal">Animals</option>
-                <option value="vegetable">Vegetables</option>
-                <option value="user">User</option>
-            </select>
+            <div class="custom-select">
+                <select name="selector" id="selector">
+                    <option value="all">All</option>
+                    <option value="animal">Animals</option>
+                    <option value="vegetable">Vegetables</option>
+                    <option value="user">User</option>
+                </select>
+            </div>
         </div>
     </header>
 
     <div id="box-container"></div>
-    
+
     <!-- MY SCRIPT -->
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
