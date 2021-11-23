@@ -11,8 +11,8 @@ function createBox(el) {
     const { name, prefix, family } = el;
     document.getElementById("box-container").innerHTML += `
     <div class="box">
-        <i class="${family} ${prefix}${name}"><i><br>
-        <span>${name}</span>
+        <span>${name}</span><br>
+        <i class="${family} ${prefix}${name}"></i>
     </div>
     `
 }

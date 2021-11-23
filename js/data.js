@@ -112,3 +112,7 @@ const icons = [
 		color: 'blue'
 	}
 ];
+
+
+
+//END FUNZIONI
