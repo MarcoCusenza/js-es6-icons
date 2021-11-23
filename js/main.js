@@ -1,6 +1,11 @@
 
 // PROGRAMMA
-fillPage("All");
+fillPage("all");
+
+document.getElementById("selector").addEventListener('change', function () {
+    document.getElementById("box-container").innerHTML = '';
+    fillPage(`${document.getElementById("selector").value}`);
+});
 // END PROGRAMMA
 
 
@@ -8,18 +13,18 @@ fillPage("All");
 //FUNZIONI
 
 function createBox(el) {
-    const { name, prefix, family } = el;
+    const { name, prefix, family, color } = el;
     document.getElementById("box-container").innerHTML += `
     <div class="box">
-        <span>${name}</span><br>
-        <i class="${family} ${prefix}${name}"></i>
-    </div>
-    `
+        <i class="${family} ${prefix}${name} ${color}"></i><br>
+        <span>${name}</span>
+    </div>`;
+
 }
 
 function fillPage(select) {
     icons.forEach(element => {
-        if (select == "All") {
+        if (select == "all") {
             createBox(element);
         } else {
             if (element.type == select) {
